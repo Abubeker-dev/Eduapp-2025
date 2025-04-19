@@ -19,6 +19,7 @@
       src="https://www.youtube.com/embed/MZ2hJFO7Ws8?rel=0&modestbranding=1"
       frameborder="0"
       allowfullscreen
+      title="Sample Video"
     ></iframe>
     <p>Watch this sample video to see what you'll get!</p>
   </div>
@@ -55,36 +56,58 @@
     <p id="access-expiry"></p>
     <p class="warning">Enable VPN before watching videos for proper view count.</p>
 
-    <h3>Grades</h3>
-    <div class="content-list" id="grade-list">
-      <!-- Grade buttons -->
-      <button class="folder-btn grade-btn" data-folder="grade-5">Grade 5</button>
-      <button class="folder-btn grade-btn" data-folder="grade-6">Grade 6</button>
-      <button class="folder-btn grade-btn" data-folder="grade-7">Grade 7</button>
-      <!-- Add Grade 8 button if data exists or planned -->
-      <!-- <button class="folder-btn grade-btn" data-folder="grade-8">Grade 8</button> -->
+    <!-- Grade Selection -->
+    <div id="grade-view">
+        <h3>Grades</h3>
+        <div class="content-list" id="grade-list">
+          <button class="folder-btn grade-btn" data-folder="grade-5">Grade 5</button>
+          <button class="folder-btn grade-btn" data-folder="grade-6">Grade 6</button>
+          <button class="folder-btn grade-btn" data-folder="grade-7">Grade 7</button>
+          <button class="folder-btn grade-btn" data-folder="grade-8">Grade 8</button>
+        </div>
     </div>
 
-    <div id="subject-list" class="content-list hidden">
-      <h3>Subjects</h3>
-      <div id="subject-buttons-container">
-        <!-- Subject buttons will be dynamically added here -->
+    <!-- Subject Selection -->
+    <div id="subject-view" class="hidden">
+      <h3 id="subject-list-title">Subjects</h3>
+      <div class="content-list" id="subject-list">
+        <div id="subject-buttons-container">
+          <!-- Subject buttons dynamically added here -->
+        </div>
+        <button id="back-to-grades" class="back-btn">Back to Grades</button>
       </div>
-      <button id="back-to-grades">Back to Grades</button>
     </div>
 
-    <div id="video-links" class="content-list hidden">
+    <!-- Chapter Selection -->
+    <div id="chapter-view" class="hidden">
+      <h3 id="chapter-list-title">Chapters</h3>
+      <div class="content-list" id="chapter-list">
+          <div id="chapter-buttons-container">
+             <!-- Chapter buttons dynamically added here -->
+             <!-- Example static buttons (will be replaced by JS): -->
+             <!--
+             <button class="folder-btn chapter-btn" data-folder="chapter-1">Chapter 1</button>
+             <button class="folder-btn chapter-btn" data-folder="chapter-2">Chapter 2</button>
+             ... up to Chapter 9 ...
+             -->
+          </div>
+         <button id="back-to-subjects" class="back-btn">Back to Subjects</button>
+      </div>
+    </div>
+
+    <!-- Video Display -->
+    <div id="video-view" class="hidden">
       <h3 id="video-list-title">Videos</h3>
-      <div id="video-list">
-        <!-- Video iframes will be dynamically added here -->
+      <div class="content-list" id="video-list">
+        <!-- Video iframes dynamically added here -->
       </div>
-      <button id="back-to-subjects">Back to Subjects</button>
+      <button id="back-to-chapters" class="back-btn">Back to Chapters</button>
     </div>
 
     <button id="logout-btn">Logout</button>
   </div>
 
-  <!-- Link to the JavaScript file - IMPORTANT: Placed before closing </body> -->
+  <!-- Link to the JavaScript file - Placed before closing </body> -->
   <script src="app.js"></script>
 </body>
 </html>
