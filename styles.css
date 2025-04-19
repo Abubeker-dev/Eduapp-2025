@@ -3,7 +3,7 @@ body {
   max-width: 600px;
   margin: 1rem auto;
   padding: 1rem;
-  background-color: #f4f4f4; /* Added a light background for contrast */
+  background-color: #f4f4f4;
 }
 h1 {
   text-align: center;
@@ -14,18 +14,20 @@ h3 {
     border-bottom: 1px solid #ccc;
     padding-bottom: 5px;
     margin-top: 1.5rem;
+    margin-bottom: 1rem; /* Added margin below h3 */
 }
 
 button {
-  padding: 10px 20px;
-  margin: 10px 5px 10px 0;
-  font-size: 1rem;
+  padding: 10px 15px; /* Slightly smaller padding */
+  margin: 5px; /* Consistent margin */
+  font-size: 0.95rem; /* Slightly smaller font */
   cursor: pointer;
   border: none;
   border-radius: 4px;
   background-color: #007bff;
   color: #fff;
   transition: background-color 0.3s;
+  vertical-align: middle; /* Align buttons better if text wraps */
 }
 button:hover {
   background-color: #0056b3;
@@ -33,24 +35,36 @@ button:hover {
 
 /* Specific button styling */
 #copy-device-id-btn, #telegram-btn, #unlock-btn {
-    display: inline-block; /* Allow side-by-side layout if space permits */
+    display: inline-block;
     margin-right: 10px;
 }
 
-#back-to-grades, #back-to-subjects, #logout-btn {
+/* Back and Logout Buttons */
+.back-btn, #logout-btn {
     background-color: #6c757d; /* Grey for back/logout */
-    margin-top: 15px; /* Add space above back buttons */
+    margin-top: 15px;
+    display: block; /* Make back buttons take full width */
+    width: calc(100% - 10px); /* Adjust width considering margin */
+    box-sizing: border-box; /* Include padding/border in width */
 }
-#back-to-grades:hover, #back-to-subjects:hover, #logout-btn:hover {
+.back-btn:hover, #logout-btn:hover {
     background-color: #5a6268;
 }
+#logout-btn {
+    background-color: #c82333; /* Red for logout */
+    margin-top: 25px; /* More space above logout */
+}
+#logout-btn:hover {
+     background-color: #bd2130;
+}
 
-input[type="text"] { /* Target text inputs specifically */
+
+input[type="text"] {
   width: 100%;
-  padding: 10px; /* Increased padding */
+  padding: 10px;
   font-size: 1rem;
-  margin-top: 0.5rem; /* Spacing */
-  margin-bottom: 1rem; /* Spacing */
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
   box-sizing: border-box;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -60,21 +74,24 @@ input[type="text"] { /* Target text inputs specifically */
   display: none;
 }
 
+/* Container for button lists */
 .content-list {
-  margin-top: 20px;
-  padding: 15px;
-  background-color: #fff; /* White background for content areas */
+  margin-top: 10px; /* Reduced top margin */
+  padding: 10px;    /* Reduced padding */
+  background-color: #fff;
   border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow */
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1); /* Lighter shadow */
+  margin-bottom: 15px; /* Space below list containers */
 }
 
+/* Buttons for Grades, Subjects, Chapters */
 .folder-btn {
-  background-color: #17a2b8; /* Teal color for folder buttons */
+  background-color: #17a2b8; /* Teal color */
   color: #fff;
+  display: inline-block;
+  width: calc(50% - 12px); /* Two buttons per row approx, adjust as needed */
+  text-align: center;
   margin: 5px;
-  border-radius: 4px;
-  padding: 10px 15px;
-  display: inline-block; /* Ensure buttons flow nicely */
 }
 .folder-btn:hover {
   background-color: #138496;
@@ -82,56 +99,72 @@ input[type="text"] { /* Target text inputs specifically */
 .folder-btn.selected {
     background-color: #0056b3; /* Darker blue for selected */
     font-weight: bold;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.3); /* Inset shadow for selected */
+}
+
+/* Make chapter buttons potentially smaller if many exist */
+.chapter-btn {
+    width: calc(33.33% - 12px); /* Aim for 3 buttons per row */
+    font-size: 0.9rem; /* Smaller font for chapters */
 }
 
 
 #video-list p {
     font-weight: bold;
-    margin-bottom: 5px; /* Space between title and iframe */
+    margin-bottom: 5px;
     color: #333;
 }
 #video-list iframe {
-  margin-bottom: 20px; /* More space below videos */
+  margin-bottom: 20px;
   border: none;
-  display: block; /* Ensure iframe takes full width properly */
-  border-radius: 5px; /* Slightly rounded corners for iframes */
+  display: block;
+  width: 100%; /* Ensure iframe takes full width */
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Add shadow to videos */
 }
 
 .warning {
-  color: #dc3545; /* Bootstrap's danger color */
+  color: #dc3545;
   font-weight: bold;
-  background-color: #f8d7da; /* Light red background */
-  border: 1px solid #f5c6cb; /* Reddish border */
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
   padding: 10px;
   border-radius: 4px;
-  margin-bottom: 1rem;
+  margin: 1rem 0; /* Add vertical margin */
 }
 
 #device-id-section {
-    background-color: #e9ecef; /* Light grey background */
+    background-color: #e9ecef;
     padding: 15px;
     border-radius: 5px;
     margin-bottom: 1.5rem;
     border: 1px solid #ced4da;
 }
 #device-id-section input {
-    background-color: #fff; /* White background for readonly input */
+    background-color: #fff;
 }
 
 #payment-section p {
-    line-height: 1.6; /* Better readability for payment details */
+    line-height: 1.6;
 }
 
-/* Add some responsiveness */
+/* Responsive adjustments */
 @media (max-width: 600px) {
   body {
     margin: 0.5rem;
     padding: 0.5rem;
   }
   button {
-    padding: 8px 15px;
+    padding: 8px 12px;
     font-size: 0.9rem;
   }
+  .folder-btn {
+      width: calc(50% - 10px); /* Ensure 2 columns on smaller screens */
+  }
+   .chapter-btn {
+      width: calc(50% - 10px); /* Chapters also 2 columns on small screens */
+       font-size: 0.85rem;
+   }
   input[type="text"] {
     padding: 8px;
     font-size: 0.9rem;
@@ -139,4 +172,12 @@ input[type="text"] { /* Target text inputs specifically */
   h1 {
       font-size: 1.8rem;
   }
+  h3 {
+      font-size: 1.2rem;
+  }
+}
+@media (max-width: 400px) {
+    .folder-btn, .chapter-btn {
+        width: calc(100% - 10px); /* Single column on very small screens */
+    }
 }
