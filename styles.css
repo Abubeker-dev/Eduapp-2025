@@ -1,0 +1,142 @@
+body {
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: 1rem auto;
+  padding: 1rem;
+  background-color: #f4f4f4; /* Added a light background for contrast */
+}
+h1 {
+  text-align: center;
+  color: #333;
+}
+h3 {
+    color: #555;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+    margin-top: 1.5rem;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px 5px 10px 0;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  transition: background-color 0.3s;
+}
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Specific button styling */
+#copy-device-id-btn, #telegram-btn, #unlock-btn {
+    display: inline-block; /* Allow side-by-side layout if space permits */
+    margin-right: 10px;
+}
+
+#back-to-grades, #back-to-subjects, #logout-btn {
+    background-color: #6c757d; /* Grey for back/logout */
+    margin-top: 15px; /* Add space above back buttons */
+}
+#back-to-grades:hover, #back-to-subjects:hover, #logout-btn:hover {
+    background-color: #5a6268;
+}
+
+input[type="text"] { /* Target text inputs specifically */
+  width: 100%;
+  padding: 10px; /* Increased padding */
+  font-size: 1rem;
+  margin-top: 0.5rem; /* Spacing */
+  margin-bottom: 1rem; /* Spacing */
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.hidden {
+  display: none;
+}
+
+.content-list {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #fff; /* White background for content areas */
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow */
+}
+
+.folder-btn {
+  background-color: #17a2b8; /* Teal color for folder buttons */
+  color: #fff;
+  margin: 5px;
+  border-radius: 4px;
+  padding: 10px 15px;
+  display: inline-block; /* Ensure buttons flow nicely */
+}
+.folder-btn:hover {
+  background-color: #138496;
+}
+.folder-btn.selected {
+    background-color: #0056b3; /* Darker blue for selected */
+    font-weight: bold;
+}
+
+
+#video-list p {
+    font-weight: bold;
+    margin-bottom: 5px; /* Space between title and iframe */
+    color: #333;
+}
+#video-list iframe {
+  margin-bottom: 20px; /* More space below videos */
+  border: none;
+  display: block; /* Ensure iframe takes full width properly */
+  border-radius: 5px; /* Slightly rounded corners for iframes */
+}
+
+.warning {
+  color: #dc3545; /* Bootstrap's danger color */
+  font-weight: bold;
+  background-color: #f8d7da; /* Light red background */
+  border: 1px solid #f5c6cb; /* Reddish border */
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+#device-id-section {
+    background-color: #e9ecef; /* Light grey background */
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+    border: 1px solid #ced4da;
+}
+#device-id-section input {
+    background-color: #fff; /* White background for readonly input */
+}
+
+#payment-section p {
+    line-height: 1.6; /* Better readability for payment details */
+}
+
+/* Add some responsiveness */
+@media (max-width: 600px) {
+  body {
+    margin: 0.5rem;
+    padding: 0.5rem;
+  }
+  button {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+  }
+  input[type="text"] {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+  h1 {
+      font-size: 1.8rem;
+  }
+}

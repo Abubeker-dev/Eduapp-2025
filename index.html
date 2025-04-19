@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EduApp 2025</title>
+  <!-- Link to the CSS file -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <h1>EduApp 2025</h1>
+
+  <div id="sample-video-section">
+    <h3>Sample Video</h3>
+    <iframe
+      width="100%"
+      height="315"
+      src="https://www.youtube.com/embed/MZ2hJFO7Ws8?rel=0&modestbranding=1"
+      frameborder="0"
+      allowfullscreen
+    ></iframe>
+    <p>Watch this sample video to see what you'll get!</p>
+  </div>
+
+  <div id="payment-section">
+    <div id="device-id-section">
+      <p><strong>Your Device ID:</strong></p>
+      <input type="text" id="device-id" readonly />
+      <button id="copy-device-id-btn">Copy Device ID</button>
+      <p style="font-size: 0.9rem; color: gray;">
+        Please send this Device ID with your payment screenshot to Telegram:<br />
+        <a href="https://t.me/eduapp1850" target="_blank">@eduapp1850</a>
+      </p>
+    </div>
+
+    <h3>Payment Details</h3>
+    <p><strong>CBE (Commercial Bank of Ethiopia)</strong></p>
+    <p>Account: 1000472621231<br />Name: Abubeker Muhammed Yesuf</p>
+
+    <p><strong>Telebirr</strong></p>
+    <p>Account: 0932661848<br />Name: Abubeker Muhammed Yesuf</p>
+
+    <p>To access the full app, please pay <strong>200 birr</strong>.</p>
+    <button id="telegram-btn">Send Payment Screenshot</button>
+
+    <p>After payment, enter the unlock code you received (valid this year):</p>
+    <input type="text" id="unlock-code" placeholder="Enter unlock code" />
+    <button id="unlock-btn">Unlock Access</button>
+    <p id="unlock-msg" style="color:red;"></p>
+  </div>
+
+  <div id="app-content" class="hidden">
+    <p><strong>Welcome! Your access is active.</strong></p>
+    <p id="access-expiry"></p>
+    <p class="warning">Enable VPN before watching videos for proper view count.</p>
+
+    <h3>Grades</h3>
+    <div class="content-list" id="grade-list">
+      <!-- Grade buttons -->
+      <button class="folder-btn grade-btn" data-folder="grade-5">Grade 5</button>
+      <button class="folder-btn grade-btn" data-folder="grade-6">Grade 6</button>
+      <button class="folder-btn grade-btn" data-folder="grade-7">Grade 7</button>
+      <!-- Add Grade 8 button if data exists or planned -->
+      <!-- <button class="folder-btn grade-btn" data-folder="grade-8">Grade 8</button> -->
+    </div>
+
+    <div id="subject-list" class="content-list hidden">
+      <h3>Subjects</h3>
+      <div id="subject-buttons-container">
+        <!-- Subject buttons will be dynamically added here -->
+      </div>
+      <button id="back-to-grades">Back to Grades</button>
+    </div>
+
+    <div id="video-links" class="content-list hidden">
+      <h3 id="video-list-title">Videos</h3>
+      <div id="video-list">
+        <!-- Video iframes will be dynamically added here -->
+      </div>
+      <button id="back-to-subjects">Back to Subjects</button>
+    </div>
+
+    <button id="logout-btn">Logout</button>
+  </div>
+
+  <!-- Link to the JavaScript file - IMPORTANT: Placed before closing </body> -->
+  <script src="app.js"></script>
+</body>
+</html>
