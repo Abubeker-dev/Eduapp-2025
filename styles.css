@@ -14,23 +14,28 @@ h3 {
     border-bottom: 1px solid #ccc;
     padding-bottom: 5px;
     margin-top: 1.5rem;
-    margin-bottom: 1rem; /* Added margin below h3 */
+    margin-bottom: 1rem;
 }
 
 button {
-  padding: 10px 15px; /* Slightly smaller padding */
-  margin: 5px; /* Consistent margin */
-  font-size: 0.95rem; /* Slightly smaller font */
+  padding: 10px 15px;
+  margin: 5px;
+  font-size: 0.95rem;
   cursor: pointer;
   border: none;
   border-radius: 4px;
   background-color: #007bff;
   color: #fff;
   transition: background-color 0.3s;
-  vertical-align: middle; /* Align buttons better if text wraps */
+  vertical-align: middle;
 }
 button:hover {
   background-color: #0056b3;
+}
+button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+    opacity: 0.7;
 }
 
 /* Specific button styling */
@@ -41,23 +46,22 @@ button:hover {
 
 /* Back and Logout Buttons */
 .back-btn, #logout-btn {
-    background-color: #6c757d; /* Grey for back/logout */
+    background-color: #6c757d;
     margin-top: 15px;
-    display: block; /* Make back buttons take full width */
-    width: calc(100% - 10px); /* Adjust width considering margin */
-    box-sizing: border-box; /* Include padding/border in width */
+    display: block;
+    width: calc(100% - 10px);
+    box-sizing: border-box;
 }
 .back-btn:hover, #logout-btn:hover {
     background-color: #5a6268;
 }
 #logout-btn {
-    background-color: #c82333; /* Red for logout */
-    margin-top: 25px; /* More space above logout */
+    background-color: #c82333;
+    margin-top: 25px;
 }
 #logout-btn:hover {
      background-color: #bd2130;
 }
-
 
 input[type="text"] {
   width: 100%;
@@ -76,41 +80,48 @@ input[type="text"] {
 
 /* Container for button lists */
 .content-list {
-  margin-top: 10px; /* Reduced top margin */
-  padding: 10px;    /* Reduced padding */
+  margin-top: 10px;
+  padding: 10px;
   background-color: #fff;
   border-radius: 5px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.1); /* Lighter shadow */
-  margin-bottom: 15px; /* Space below list containers */
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  margin-bottom: 15px;
+  text-align: center;
 }
 
-/* Buttons for Grades, Subjects, Chapters */
+/* Buttons for Regions, Grades, Subjects, Chapters */
 .folder-btn {
-  background-color: #17a2b8; /* Teal color */
+  background-color: #17a2b8;
   color: #fff;
   display: inline-block;
-  width: calc(50% - 12px); /* Two buttons per row approx, adjust as needed */
+  width: calc(50% - 12px);
   text-align: center;
   margin: 5px;
+}
+.region-btn {
+     padding: 12px 18px;
+     font-size: 1rem;
 }
 .folder-btn:hover {
   background-color: #138496;
 }
 .folder-btn.selected {
-    background-color: #0056b3; /* Darker blue for selected */
+    background-color: #0056b3;
     font-weight: bold;
-    box-shadow: inset 0 1px 3px rgba(0,0,0,0.3); /* Inset shadow for selected */
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.3);
 }
-
-/* Make chapter buttons potentially smaller if many exist */
 .chapter-btn {
-    width: calc(33.33% - 12px); /* Aim for 3 buttons per row */
-    font-size: 0.9rem; /* Smaller font for chapters */
+    width: calc(33.33% - 12px);
+    font-size: 0.9rem;
 }
 
-
+/* Styling for Video Section */
+#video-list {
+    text-align: left;
+}
 #video-list p {
     font-weight: bold;
+    margin-top: 15px;
     margin-bottom: 5px;
     color: #333;
 }
@@ -118,9 +129,16 @@ input[type="text"] {
   margin-bottom: 20px;
   border: none;
   display: block;
-  width: 100%; /* Ensure iframe takes full width */
+  width: 100%;
   border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Add shadow to videos */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+#video-list .video-notice {
+    font-size: 0.8em;
+    color: gray;
+    text-align: left;
+    margin-top: -15px;
+    margin-bottom: 15px;
 }
 
 .warning {
@@ -130,7 +148,7 @@ input[type="text"] {
   border: 1px solid #f5c6cb;
   padding: 10px;
   border-radius: 4px;
-  margin: 1rem 0; /* Add vertical margin */
+  margin: 1rem 0;
 }
 
 #device-id-section {
@@ -150,34 +168,15 @@ input[type="text"] {
 
 /* Responsive adjustments */
 @media (max-width: 600px) {
-  body {
-    margin: 0.5rem;
-    padding: 0.5rem;
-  }
-  button {
-    padding: 8px 12px;
-    font-size: 0.9rem;
-  }
-  .folder-btn {
-      width: calc(50% - 10px); /* Ensure 2 columns on smaller screens */
-  }
-   .chapter-btn {
-      width: calc(50% - 10px); /* Chapters also 2 columns on small screens */
-       font-size: 0.85rem;
-   }
-  input[type="text"] {
-    padding: 8px;
-    font-size: 0.9rem;
-  }
-  h1 {
-      font-size: 1.8rem;
-  }
-  h3 {
-      font-size: 1.2rem;
-  }
+  body { margin: 0.5rem; padding: 0.5rem; }
+  button { padding: 8px 12px; font-size: 0.9rem; }
+  .region-btn { padding: 10px 15px; font-size: 0.95rem; }
+  .folder-btn { width: calc(50% - 10px); }
+  .chapter-btn { width: calc(50% - 10px); font-size: 0.85rem; }
+  input[type="text"] { padding: 8px; font-size: 0.9rem; }
+  h1 { font-size: 1.8rem; }
+  h3 { font-size: 1.2rem; }
 }
 @media (max-width: 400px) {
-    .folder-btn, .chapter-btn {
-        width: calc(100% - 10px); /* Single column on very small screens */
-    }
+    .folder-btn, .chapter-btn { width: calc(100% - 10px); }
 }
