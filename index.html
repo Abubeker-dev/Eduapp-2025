@@ -11,6 +11,7 @@
 
   <h1>EduApp 2025</h1>
 
+  <!-- Sample Video Section (Shown when logged out) -->
   <div id="sample-video-section">
     <h3>Sample Video</h3>
     <iframe
@@ -24,6 +25,7 @@
     <p>Watch this sample video to see what you'll get!</p>
   </div>
 
+  <!-- Payment and Unlock Section (Shown when logged out) -->
   <div id="payment-section">
     <div id="device-id-section">
       <p><strong>Your Device ID:</strong></p>
@@ -51,20 +53,28 @@
     <p id="unlock-msg" style="color:red;"></p>
   </div>
 
+  <!-- Main Application Content (Shown when logged in) -->
   <div id="app-content" class="hidden">
     <p><strong>Welcome! Your access is active.</strong></p>
     <p id="access-expiry"></p>
     <p class="warning">Enable VPN before watching videos for proper view count.</p>
 
-    <!-- Grade Selection -->
-    <div id="grade-view">
-        <h3>Grades</h3>
-        <div class="content-list" id="grade-list">
-          <button class="folder-btn grade-btn" data-folder="grade-5">Grade 5</button>
-          <button class="folder-btn grade-btn" data-folder="grade-6">Grade 6</button>
-          <button class="folder-btn grade-btn" data-folder="grade-7">Grade 7</button>
-          <button class="folder-btn grade-btn" data-folder="grade-8">Grade 8</button>
+    <!-- Region Selection -->
+    <div id="region-view">
+        <h3>Select Region</h3>
+        <div class="content-list" id="region-list">
+          <button class="folder-btn region-btn" data-folder="amhara-region">Amhara Region</button>
+          <button class="folder-btn region-btn" data-folder="addis-ababa-region">Addis Ababa Region</button>
         </div>
+    </div>
+
+    <!-- Grade Selection -->
+    <div id="grade-view" class="hidden">
+        <h3 id="grade-list-title">Grades</h3>
+        <div class="content-list" id="grade-list">
+          <!-- Grade buttons dynamically added here -->
+        </div>
+        <button id="back-to-regions" class="back-btn">Back to Regions</button>
     </div>
 
     <!-- Subject Selection -->
@@ -84,12 +94,6 @@
       <div class="content-list" id="chapter-list">
           <div id="chapter-buttons-container">
              <!-- Chapter buttons dynamically added here -->
-             <!-- Example static buttons (will be replaced by JS): -->
-             <!--
-             <button class="folder-btn chapter-btn" data-folder="chapter-1">Chapter 1</button>
-             <button class="folder-btn chapter-btn" data-folder="chapter-2">Chapter 2</button>
-             ... up to Chapter 9 ...
-             -->
           </div>
          <button id="back-to-subjects" class="back-btn">Back to Subjects</button>
       </div>
