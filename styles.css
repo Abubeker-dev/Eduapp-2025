@@ -110,6 +110,17 @@ input[type="text"] {
     font-weight: bold;
     box-shadow: inset 0 1px 3px rgba(0,0,0,0.3);
 }
+/* Style for locked grade buttons (subtler than full disabled) */
+.grade-btn:disabled {
+     opacity: 0.6;
+     background-color: #6c757d; /* Use a gray color */
+     cursor: not-allowed;
+}
+.grade-btn:disabled:hover {
+     background-color: #5a6268; /* Slightly darker gray on hover */
+}
+
+
 .chapter-btn {
     width: calc(33.33% - 12px);
     font-size: 0.9rem;
