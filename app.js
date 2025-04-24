@@ -1,5 +1,5 @@
 const ADMIN = {
-  telegramUsername: "eduapp1850", // MAKE SURE THIS IS CORRECT
+  telegramUsername: "sms1850", // MAKE SURE THIS IS CORRECT
   // UPDATED STRUCTURE: region -> grade -> subject -> chapter -> [videos]
   // IMPORTANT: URLs MUST be in the EMBED format!
   videos: {
