@@ -145,7 +145,7 @@ const ADMIN = {
               "social-study": { "chapter-1": [] }
        },
        "grade-8": { // Fill with Addis G8 data
-            "maths": { "chapter-1": [] }, "english": { "chapter-1": [] }, "gs": "chapter-1": [] }, "ict": { "chapter-1": [] }, "citizenship": { "chapter-1": [] },
+            "maths": { "chapter-1": [] }, "english": { "chapter-1": [] }, "gs": { "chapter-1": [] }, "ict": { "chapter-1": [] }, "citizenship": { "chapter-1": [] },
             // NEW SUBJECTS FOR ADDIS ABABA GRADE 8 (example, you can add data)
             "pva": { "chapter-1": [] },
             "social-study": { "chapter-1": [] }
@@ -156,12 +156,47 @@ const ADMIN = {
 
 // --- Helper Functions (deviceId, SHA-256 hashing, LIFETIME access control) ---
 function getDeviceId() {
-  let id = localStorage.getItem("deviceId"); if (!id) { id = "device-" + Math.random().toString(36).slice(2, 11); localStorage.setItem("deviceId", id); } return id;
+  let id = localStorage.getItem("deviceId");
+  if (!id) {
+    id = "device-" + Math.random().toString(36).slice(2, 11);
+    localStorage.setItem("deviceId", id);
+  }
+  return id;
 }
-const deviceId = getDeviceId();
-const deviceIdInput = document.getElementById("device-id"); if (deviceIdInput) deviceIdInput.value = deviceId;
+
+const deviceId = getDeviceId(); // Get deviceId once when the script loads
+
+// Corrected: Update the device-id element directly when the script runs
+const deviceIdDisplay = document.getElementById("device-id-display"); // Changed ID to avoid conflict with input
+if (deviceIdDisplay) {
+  deviceIdDisplay.textContent = deviceId;
+}
+
 const copyDeviceIdBtn = document.getElementById("copy-device-id-btn");
-if (copyDeviceIdBtn) { copyDeviceIdBtn.addEventListener("click", async () => { try { await navigator.clipboard.writeText(deviceId); alert("Device ID copied!"); } catch (err) { try { const input = document.createElement("input"); input.style.position = "absolute"; input.style.left = "-9999px"; input.value = deviceId; document.body.appendChild(input); input.select(); input.setSelectionRange(0, 99999); document.execCommand("copy"); document.body.removeChild(input); alert("Device ID copied (fallback method)!"); } catch(fallbackErr) { alert("Could not copy Device ID. Please select and copy it manually."); } } }); }
+if (copyDeviceIdBtn) {
+  copyDeviceIdBtn.addEventListener("click", async () => {
+    try {
+      await navigator.clipboard.writeText(deviceId);
+      alert("Device ID copied!");
+    } catch (err) {
+      try {
+        const input = document.createElement("input");
+        input.style.position = "absolute";
+        input.style.left = "-9999px";
+        input.value = deviceId;
+        document.body.appendChild(input);
+        input.select();
+        input.setSelectionRange(0, 99999);
+        document.execCommand("copy");
+        document.body.removeChild(input);
+        alert("Device ID copied (fallback method)!");
+      } catch(fallbackErr) {
+        alert("Could not copy Device ID. Please select and copy it manually.");
+      }
+    }
+  });
+}
+
 function arrayBufferToHex(buffer) { return Array.prototype.map.call(new Uint8Array(buffer), byte => ('0' + byte.toString(16)).slice(-2)).join(''); }
 
 // Hashing function based ONLY on deviceId and grade (LIFETIME)
@@ -527,13 +562,4 @@ function loadVideos(chapter) {
             iframe.width = "100%";
             iframe.height = "315"; // Adjust height if needed
             iframe.src = video.url; // Use the EMBED URL
-            iframe.title = video.title || "YouTube video player";
-            iframe.setAttribute("frameborder", "0");
-            iframe.setAttribute("allow", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share");
-            iframe.setAttribute("allowfullscreen", "true");
-            videoListContainer.appendChild(p);
-            videoListContainer.appendChild(iframe);
-        });
-         // Remove the limit notice if showing all videos
-         // if (allVideos.length > 2) {
-         //     const notice =
+            iframe.title = video.title || "YouTube
