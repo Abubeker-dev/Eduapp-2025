@@ -1,3 +1,5 @@
+            
+
 const ADMIN = {
   telegramUsername: "sms1850", // MAKE SURE THIS IS CORRECT
   // UPDATED STRUCTURE: region -> grade -> subject -> chapter -> [videos]
@@ -19,27 +21,11 @@ const ADMIN = {
          "english": { /* Fill with Amhara G5 English data */ "chapter-1": []},
          "gs": { /* Fill with Amhara G5 GS data */ "chapter-1": []},
          "ict": { /* Fill with Amhara G5 ICT data */ "chapter-1": []},
-         "citizenship": { /* Fill with Amhara G5 Citizenship data */ "chapter-1": []},
-         // NEW SUBJECTS FOR AMHARA GRADE 5
-         "pva": {
-           "chapter-1": [
-             { title: "Amhara G5 P.V.A Ch1 Vid1", url: "https://www.youtube.com/embed/pva_video_amhara_g5_ch1_1?rel=0&modestbranding=1" },
-             { title: "Amhara G5 P.V.A Ch1 Vid2", url: "https://www.youtube.com/embed/pva_video_amhara_g5_ch1_2?rel=0&modestbranding=1" },
-           ],
-           "chapter-2": [], // Add more chapters/videos as needed
-         },
-         "social-study": {
-           "chapter-1": [
-             { title: "Amhara G5 Social Study Ch1 Vid1", url: "https://www.youtube.com/embed/social_video_amhara_g5_ch1_1?rel=0&modestbranding=1" },
-           ],
-         }
+         "citizenship": { /* Fill with Amhara G5 Citizenship data */ "chapter-1": []}
        },
        "grade-6": { // Fill with Amhara G6 data
             "maths": { "chapter-1": [{title:"Amhara G6 M Ch1 V1", url:"PUT_EMBED_URL"}, {title:"Amhara G6 M Ch1 V2", url:"PUT_EMBED_URL"}] },
-            "english": { "chapter-1": [] }, "gs": { "chapter-1": [] }, "ict": { "chapter-1": [] }, "citizenship": { "chapter-1": [] },
-            // NEW SUBJECTS FOR AMHARA GRADE 6
-            "pva": { "chapter-1": [] },
-            "social-study": { "chapter-1": [] }
+            "english": { "chapter-1": [] }, "gs": { "chapter-1": [] }, "ict": { "chapter-1": [] }, "citizenship": { "chapter-1": [] }
        },
        "grade-7": { // Fill with Amhara G7 data
             "maths": {
@@ -66,16 +52,62 @@ const ADMIN = {
               "chapter-7":[{ title: "Amhara G5 Maths Ch1 Vid1", url: "https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0&modestbranding=1" },
              { title: "Amhara G5 Maths Ch1 Vid2", url: "https://www.youtube.com/embed/3JZ_D3ELwOQ?rel=0&modestbranding=1" },  ]
             },
-            "english": { "chapter-1": [] }, "gs": { "chapter-1": [] }, "ict": { "chapter-1": [] }, "citizenship": { "chapter-1": [] },
-            // NEW SUBJECTS FOR AMHARA GRADE 7
-            "pva": { "chapter-1": [] },
-            "social-study": { "chapter-1": [] }
+            "english": { "chapter-1": [] }, 
+                   "gs":
+            {
+               "chapter-1":[ { title: "Amhara G5 Maths Ch1 Vid1", url: "https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0&modestbranding=1" },
+             { title: "Amhara G5 Maths Ch1 Vid2", url: "https://www.youtube.com/embed/3JZ_D3ELwOQ?rel=0&modestbranding=1" },  ],
+              
+              "chapter-2":[{ title: "Amhara G5 Maths Ch1 Vid1", url: "https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0&modestbranding=1" },
+             { title: "Amhara G5 Maths Ch1 Vid2", url: "https://www.youtube.com/embed/3JZ_D3ELwOQ?rel=0&modestbranding=1" },  ],
+              
+              
+              "chapter-3": [
+                     { title: "Grade 7 Maths Unit 3 Part 1", url: "PUT_YOUR_YOUTUBE_EMBED_URL_HERE" },
+                     { title: "Grade 7 Maths Unit 3 Part 2 (if available)", url: "PUT_ANOTHER_YOUTUBE_EMBED_URL_HERE" },
+                 ],
+                 "chapter-4": [  { title: "Amhara G5 Maths Ch1 Vid1", url: "https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0&modestbranding=1" },
+             { title: "Amhara G5 Maths Ch1 Vid2", url: "https://www.youtube.com/embed/3JZ_D3ELwOQ?rel=0&modestbranding=1" },  ],
+              "chapter-5": [ { title: "Amhara G5 Maths Ch1 Vid1", url: "https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0&modestbranding=1" },
+             { title: "Amhara G5 Maths Ch1 Vid2", url: "https://www.youtube.com/embed/3JZ_D3ELwOQ?rel=0&modestbranding=1" },  ],
+              
+              "chapter-6":[{ title: "Amhara Grade 7 Maths unit 6 solid figure and congruency", url: "https://www.youtube.com/embed/UNXO2Q7bxG4?rel=0&modestbranding=1" },
+          
+                           { title: "Amhara Grade 7 Maths Cunit 6  solid figure and congruency", url: "https://www.youtube.com/embed/UNXO2Q7bxG4?rel=0&modestbranding=1" }, ],
+              
+              "chapter-7":[{ title: "Amhara G5 Maths Ch1 Vid1", url: "https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0&modestbranding=1" },
+             { title: "Amhara G5 Maths Ch1 Vid2", url: "https://www.youtube.com/embed/3JZ_D3ELwOQ?rel=0&modestbranding=1" },  ]
+            },
+                   "ict":
+                          {
+               "chapter-1":[ { title: "Amhara G5 Maths Ch1 Vid1", url: "https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0&modestbranding=1" },
+             { title: "Amhara G5 Maths Ch1 Vid2", url: "https://www.youtube.com/embed/3JZ_D3ELwOQ?rel=0&modestbranding=1" },  ],
+              
+              "chapter-2":[{ title: "Amhara G5 Maths Ch1 Vid1", url: "https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0&modestbranding=1" },
+             { title: "Amhara G5 Maths Ch1 Vid2", url: "https://www.youtube.com/embed/3JZ_D3ELwOQ?rel=0&modestbranding=1" },  ],
+              
+              
+              "chapter-3": [
+                     { title: "Grade 7 Maths Unit 3 Part 1", url: "PUT_YOUR_YOUTUBE_EMBED_URL_HERE" },
+                     { title: "Grade 7 Maths Unit 3 Part 2 (if available)", url: "PUT_ANOTHER_YOUTUBE_EMBED_URL_HERE" },
+                 ],
+                 "chapter-4": [  { title: "Amhara G5 Maths Ch1 Vid1", url: "https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0&modestbranding=1" },
+             { title: "Amhara G5 Maths Ch1 Vid2", url: "https://www.youtube.com/embed/3JZ_D3ELwOQ?rel=0&modestbranding=1" },  ],
+              "chapter-5": [ { title: "Amhara G5 Maths Ch1 Vid1", url: "https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0&modestbranding=1" },
+             { title: "Amhara G5 Maths Ch1 Vid2", url: "https://www.youtube.com/embed/3JZ_D3ELwOQ?rel=0&modestbranding=1" },  ],
+              
+              "chapter-6":[{ title: "Amhara Grade 7 Maths unit 6 solid figure and congruency", url: "https://www.youtube.com/embed/UNXO2Q7bxG4?rel=0&modestbranding=1" },
+          
+                           { title: "Amhara Grade 7 Maths Cunit 6  solid figure and congruency", url: "https://www.youtube.com/embed/UNXO2Q7bxG4?rel=0&modestbranding=1" }, ],
+              
+              "chapter-7":[{ title: "Amhara G5 Maths Ch1 Vid1", url: "https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0&modestbranding=1" },
+             { title: "Amhara G5 Maths Ch1 Vid2", url: "https://www.youtube.com/embed/3JZ_D3ELwOQ?rel=0&modestbranding=1" },  ]
+            },     
+                   
+                   "citizenship": { "chapter-1": [] }
        },
        "grade-8": { // Fill with Amhara G8 data
-            "maths": { "chapter-1": [] }, "english": { "chapter-1": [] }, "gs": { "chapter-1": [] }, "ict": { "chapter-1": [] }, "citizenship": { "chapter-1": [] },
-            // NEW SUBJECTS FOR AMHARA GRADE 8 (example, you can add data)
-            "pva": { "chapter-1": [] },
-            "social-study": { "chapter-1": [] }
+            "maths": { "chapter-1": [] }, "english": { "chapter-1": [] }, "gs": { "chapter-1": [] }, "ict": { "chapter-1": [] }, "citizenship": { "chapter-1": [] }
        }
     },
     // ===============================================
@@ -93,23 +125,11 @@ const ADMIN = {
          "english": { "chapter-1": [] }, // Add Addis G5 English chapters/videos
          "gs": { "chapter-1": [] },      // Add Addis G5 GS chapters/videos
          "ict": { "chapter-1": [] },     // Add Addis G5 ICT chapters/videos
-         "citizenship": { "chapter-1": [] }, // Add Addis G5 Citizenship chapters/videos
-         // NEW SUBJECTS FOR ADDIS ABABA GRADE 5
-         "pva": {
-           "chapter-1": [
-             { title: "Addis G5 P.V.A Ch1 Vid1", url: "https://www.youtube.com/embed/pva_video_addis_g5_ch1_1?rel=0&modestbranding=1" },
-           ],
-         },
-         "social-study": {
-           "chapter-1": [],
-         }
+         "citizenship": { "chapter-1": [] } // Add Addis G5 Citizenship chapters/videos
        },
        "grade-6": { // Fill with Addis G6 data
             "maths": { "chapter-1": [{title:"Addis G6 M Ch1 V1", url:"PUT_EMBED_URL"},{title:"Addis G6 M Ch1 V2", url:"PUT_EMBED_URL"}] },
-            "english": { "chapter-1": [] }, "gs": { "chapter-1": [] }, "ict": { "chapter-1": [] }, "citizenship": { "chapter-1": [] },
-            // NEW SUBJECTS FOR ADDIS ABABA GRADE 6
-            "pva": { "chapter-1": [] },
-            "social-study": { "chapter-1": [] }
+            "english": { "chapter-1": [] }, "gs": { "chapter-1": [] }, "ict": { "chapter-1": [] }, "citizenship": { "chapter-1": [] }
        },
        "grade-7": { // Fill with Addis G7 data
         
@@ -139,16 +159,38 @@ const ADMIN = {
              { title: "Amhara G5 Maths Ch1 Vid2", url: "https://www.youtube.com/embed/3JZ_D3ELwOQ?rel=0&modestbranding=1" },  ]
             },
               
-              "english": { "chapter-1": [] }, "gs": { "chapter-1": [] }, "ict": { "chapter-1": [] }, "citizenship": { "chapter-1": [] },
-              // NEW SUBJECTS FOR ADDIS ABABA GRADE 7
-              "pva": { "chapter-1": [] },
-              "social-study": { "chapter-1": [] }
+              
+              "english": {
+               "chapter-1":[ { title: "Amhara G5 Maths Ch1 Vid1", url: "https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0&modestbranding=1" },
+             { title: "Amhara G5 Maths Ch1 Vid2", url: "https://www.youtube.com/embed/3JZ_D3ELwOQ?rel=0&modestbranding=1" },  ],
+              
+              "chapter-2":[{ title: "Amhara G5 Maths Ch1 Vid1", url: "https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0&modestbranding=1" },
+             { title: "Amhara G5 Maths Ch1 Vid2", url: "https://www.youtube.com/embed/3JZ_D3ELwOQ?rel=0&modestbranding=1" },  ],
+              
+              
+              "chapter-3": [
+                     { title: "Grade 7 Maths Unit 3 Part 1", url: "PUT_YOUR_YOUTUBE_EMBED_URL_HERE" },
+                     { title: "Grade 7 Maths Unit 3 Part 2 (if available)", url: "PUT_ANOTHER_YOUTUBE_EMBED_URL_HERE" },
+                 ],
+                 "chapter-4": [  { title: "Amhara G5 Maths Ch1 Vid1", url: "https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0&modestbranding=1" },
+             { title: "Amhara G5 Maths Ch1 Vid2", url: "https://www.youtube.com/embed/3JZ_D3ELwOQ?rel=0&modestbranding=1" },  ],
+              "chapter-5": [ { title: "Amhara G5 Maths Ch1 Vid1", url: "https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0&modestbranding=1" },
+             { title: "Amhara G5 Maths Ch1 Vid2", url: "https://www.youtube.com/embed/3JZ_D3ELwOQ?rel=0&modestbranding=1" },  ],
+              
+              "chapter-6":[{ title: "Amhara Grade 7 Maths unit 6 solid figure and congruency", url: "https://www.youtube.com/embed/UNXO2Q7bxG4?rel=0&modestbranding=1" },
+          
+                           { title: "Amhara Grade 7 Maths Cunit 6  solid figure and congruency", url: "https://www.youtube.com/embed/UNXO2Q7bxG4?rel=0&modestbranding=1" }, ],
+              
+              "chapter-7":[{ title: "Amhara G5 Maths Ch1 Vid1", url: "https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0&modestbranding=1" },
+             { title: "Amhara G5 Maths Ch1 Vid2", url: "https://www.youtube.com/embed/3JZ_D3ELwOQ?rel=0&modestbranding=1" },  ]
+            },
+                      "maths": { "chapter-1": [] }, "english": { "chapter-1": [] },    
+                          "gs": { "chapter-1": [] }, "ict": { "chapter-1": [] }, "citizenship": { "chapter-1": [] }
        },
        "grade-8": { // Fill with Addis G8 data
-            "maths": { "chapter-1": [] }, "english": { "chapter-1": [] }, "gs": { "chapter-1": [] }, "ict": { "chapter-1": [] }, "citizenship": { "chapter-1": [] },
-            // NEW SUBJECTS FOR ADDIS ABABA GRADE 8 (example, you can add data)
-            "pva": { "chapter-1": [] },
-            "social-study": { "chapter-1": [] }
+            "maths": { "chapter-1": [] }, "english": { "chapter-1": [] }, 
+                   
+                   "gs": { "chapter-1": [] }, "ict": { "chapter-1": [] }, "citizenship": { "chapter-1": [] }
        }
     }
   }
@@ -156,47 +198,12 @@ const ADMIN = {
 
 // --- Helper Functions (deviceId, SHA-256 hashing, LIFETIME access control) ---
 function getDeviceId() {
-  let id = localStorage.getItem("deviceId");
-  if (!id) {
-    id = "device-" + Math.random().toString(36).slice(2, 11);
-    localStorage.setItem("deviceId", id);
-  }
-  return id;
+  let id = localStorage.getItem("deviceId"); if (!id) { id = "device-" + Math.random().toString(36).slice(2, 11); localStorage.setItem("deviceId", id); } return id;
 }
-
-const deviceId = getDeviceId(); // Get deviceId once when the script loads
-
-// Corrected: Update the device-id element directly when the script runs
-const deviceIdDisplay = document.getElementById("device-id-display"); // Changed ID to avoid conflict with input
-if (deviceIdDisplay) {
-  deviceIdDisplay.textContent = deviceId;
-}
-
+const deviceId = getDeviceId();
+const deviceIdInput = document.getElementById("device-id"); if (deviceIdInput) deviceIdInput.value = deviceId;
 const copyDeviceIdBtn = document.getElementById("copy-device-id-btn");
-if (copyDeviceIdBtn) {
-  copyDeviceIdBtn.addEventListener("click", async () => {
-    try {
-      await navigator.clipboard.writeText(deviceId);
-      alert("Device ID copied!");
-    } catch (err) {
-      try {
-        const input = document.createElement("input");
-        input.style.position = "absolute";
-        input.style.left = "-9999px";
-        input.value = deviceId;
-        document.body.appendChild(input);
-        input.select();
-        input.setSelectionRange(0, 99999);
-        document.execCommand("copy");
-        document.body.removeChild(input);
-        alert("Device ID copied (fallback method)!");
-      } catch(fallbackErr) {
-        alert("Could not copy Device ID. Please select and copy it manually.");
-      }
-    }
-  });
-}
-
+if (copyDeviceIdBtn) { copyDeviceIdBtn.addEventListener("click", async () => { try { await navigator.clipboard.writeText(deviceId); alert("Device ID copied!"); } catch (err) { try { const input = document.createElement("input"); input.style.position = "absolute"; input.style.left = "-9999px"; input.value = deviceId; document.body.appendChild(input); input.select(); input.setSelectionRange(0, 99999); document.execCommand("copy"); document.body.removeChild(input); alert("Device ID copied (fallback method)!"); } catch(fallbackErr) { alert("Could not copy Device ID. Please select and copy it manually."); } } }); }
 function arrayBufferToHex(buffer) { return Array.prototype.map.call(new Uint8Array(buffer), byte => ('0' + byte.toString(16)).slice(-2)).join(''); }
 
 // Hashing function based ONLY on deviceId and grade (LIFETIME)
@@ -384,14 +391,10 @@ function resetSelections() {
     currentRegion = null; currentGrade = null; currentSubject = null; currentChapter = null;
     document.querySelectorAll(".folder-btn.selected").forEach(b => b.classList.remove("selected"));
 }
-
-// MODIFIED: Added 'pva' and 'social-study' to formatting
 function formatDisplayName(key) {
     if (!key) return '';
     if (key === 'gs') return 'G.S';
     if (key === 'ict') return 'ICT';
-    if (key === 'pva') return 'P.V.A'; // NEW
-    if (key === 'social-study') return 'Social Study'; // NEW
     if (key === 'amhara-region') return 'Amhara Region';
     if (key === 'addis-ababa-region') return 'Addis Ababa Region';
     return key.replace(/-/g, ' ').replace(/\b(gs|ict)\b/gi, m => m.toUpperCase()).replace(/\b\w/g, l => l.toUpperCase());
@@ -471,9 +474,7 @@ function populateSubjects(grade) {
     const regionName = formatDisplayName(currentRegion);
     const gradeName = formatDisplayName(grade);
     subjectListTitle.textContent = `${regionName} / ${gradeName} - Subjects`;
-
-    // MODIFIED: Added 'pva' and 'social-study' to the order
-    const subjectOrder = ["maths", "english", "gs", "ict", "citizenship", "pva", "social-study"];
+    const subjectOrder = ["maths", "english", "gs", "ict", "citizenship"];
     const availableSubjects = gradeData ? Object.keys(gradeData) : [];
 
     if (!gradeData || availableSubjects.length === 0) {
@@ -562,4 +563,197 @@ function loadVideos(chapter) {
             iframe.width = "100%";
             iframe.height = "315"; // Adjust height if needed
             iframe.src = video.url; // Use the EMBED URL
-            iframe.title = video.title || "YouTube
+            iframe.title = video.title || "YouTube video player";
+            iframe.setAttribute("frameborder", "0");
+            iframe.setAttribute("allow", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share");
+            iframe.setAttribute("allowfullscreen", "true");
+            videoListContainer.appendChild(p);
+            videoListContainer.appendChild(iframe);
+        });
+         // Remove the limit notice if showing all videos
+         // if (allVideos.length > 2) {
+         //     const notice = document.createElement("p"); notice.textContent = `(Showing first 2 of ${allVideos.length} videos for this chapter)`;
+         //     notice.className = 'video-notice'; videoListContainer.appendChild(notice);
+         // }
+    }
+    document.querySelectorAll("#chapter-list .folder-btn.selected").forEach(b => b.classList.remove("selected"));
+    const chapterBtn = document.querySelector(`#chapter-list .folder-btn[data-folder='${chapter}']`);
+    if(chapterBtn) chapterBtn.classList.add("selected");
+    showView("videos");
+}
+
+
+// --- Initial Setup & Event Listeners ---
+document.addEventListener('DOMContentLoaded', () => {
+    showAppUI(); // Initial UI setup
+
+    if (telegramBtn) {
+        telegramBtn.addEventListener("click", () => {
+            window.open(`https://t.me/${ADMIN.telegramUsername}`, "_blank");
+        });
+    }
+
+    // Unlock Button Logic - LIFETIME (NO YEAR)
+    if (unlockBtn && unlockCodeInput && unlockMsg) {
+        unlockBtn.addEventListener('click', async () => {
+            const userCode = unlockCodeInput.value.trim().toUpperCase(); // Normalize input
+            unlockMsg.textContent = "";
+            unlockBtn.disabled = true;
+
+            if (!userCode) {
+                unlockMsg.textContent = "Please enter the code.";
+                unlockBtn.disabled = false;
+                return;
+            }
+
+            let codeIsValid = false;
+            const gradesToCheck = ["grade-5", "grade-6", "grade-7", "grade-8"];
+
+            for (const grade of gradesToCheck) {
+                try {
+                    // Use the lifetime hashing function (NO YEAR)
+                    const expectedCode = await hashDeviceIdWithGrade(deviceId, grade);
+                    console.log(`Checking code for ${grade}: User=${userCode} Expected=${expectedCode}`);
+
+                    if (expectedCode === "CODE-HASHINGERROR" || expectedCode === "CODE-NOSUBTLECRYPTO") {
+                        unlockMsg.textContent = "Code validation error. Try again or contact support.";
+                        codeIsValid = false; // Stop checking on fundamental error
+                        break;
+                    }
+
+                    // Compare user input with the expected code for this grade
+                    if (userCode === expectedCode.toUpperCase()) { // Compare normalized codes
+                        console.log(`Code match found for ${grade}!`);
+                        if (saveGradeAccess(grade)) { // Try to save access (lifetime)
+                             unlockMsg.textContent = `Lifetime access granted for ${formatDisplayName(grade)}!`;
+                             unlockCodeInput.value = ""; // Clear input on success
+                             codeIsValid = true;
+                             showAppUI(); // Update the UI immediately to reflect new access
+                        } else {
+                             unlockMsg.textContent = `Access save failed for ${formatDisplayName(grade)}.`;
+                             codeIsValid = false; // Treat save failure as invalid
+                        }
+                        break; // Stop checking other grades once a match is found and processed
+                    }
+                } catch (error) {
+                    console.error(`Error checking code for ${grade}:`, error);
+                    unlockMsg.textContent = "An error occurred during code validation.";
+                    codeIsValid = false; // Stop checking on error
+                    break;
+                }
+            } // End grade loop
+
+            if (!codeIsValid && !unlockMsg.textContent) { // Show invalid only if no other message was set
+                unlockMsg.textContent = "Invalid unlock code.";
+            }
+
+            unlockBtn.disabled = false; // Re-enable button
+        });
+    }
+
+    // Logout Button
+    if (logoutBtn) {
+        logoutBtn.addEventListener("click", () => {
+            localStorage.removeItem("eduaccess"); // Remove all access data
+            resetSelections();
+            showAppUI(); // Show the logged-out UI
+        });
+    }
+
+    // Navigation Listeners (Event Delegation)
+    if (regionList) {
+        regionList.addEventListener("click", (event) => {
+            if (event.target.classList.contains("region-btn")) {
+                const selectedRegion = event.target.dataset.folder;
+                if(selectedRegion) populateGrades(selectedRegion);
+            }
+        });
+    }
+    if (gradeList) {
+        gradeList.addEventListener("click", (event) => {
+            // Check if the clicked element is a grade button AND *not disabled*
+            if (event.target.classList.contains("grade-btn") && !event.target.disabled) {
+                const selectedGrade = event.target.dataset.folder;
+                 if(selectedGrade && hasAccessToGrade(selectedGrade)) { // Re-verify access just in case
+                     populateSubjects(selectedGrade);
+                } else if (selectedGrade) {
+                    console.warn("Clicked locked grade button:", selectedGrade); // Should not happen
+                    alert("Access to this grade is required.");
+                }
+            } else if (event.target.classList.contains("grade-btn") && event.target.disabled) {
+                 // Give feedback if they click a locked grade
+                 alert(`Purchase access required for ${formatDisplayName(event.target.dataset.folder)}`);
+            }
+        });
+    }
+    if (subjectList) {
+         subjectList.addEventListener("click", (event) => {
+            if (event.target.classList.contains("subject-btn")) {
+                 const selectedSubject = event.target.dataset.folder;
+                 if(selectedSubject) populateChapters(selectedSubject);
+             }
+         });
+    }
+    if (chapterList) {
+        chapterList.addEventListener("click", (event) => {
+            // Ensure the clicked element is a chapter button AND it's not disabled
+            if (event.target.classList.contains("chapter-btn") && !event.target.disabled) {
+                const selectedChapter = event.target.dataset.folder;
+                if(selectedChapter) loadVideos(selectedChapter);
+            } else if (event.target.classList.contains("chapter-btn") && event.target.disabled) {
+                 alert(`No videos available for ${formatDisplayName(event.target.dataset.folder)} yet.`);
+            }
+        });
+    }
+
+    // Back Button Listeners
+    if (backToRegionsBtn) {
+        backToRegionsBtn.addEventListener("click", () => {
+            currentRegion = null;
+            document.querySelectorAll("#region-list .folder-btn.selected").forEach(b => b.classList.remove("selected"));
+            showView("regions");
+        });
+    }
+    if (backToGradesBtn) {
+        backToGradesBtn.addEventListener("click", () => {
+            currentGrade = null;
+            document.querySelectorAll("#grade-list .folder-btn.selected").forEach(b => b.classList.remove("selected"));
+            showView("grades");
+        });
+    }
+     if (backToSubjectsBtn) {
+        backToSubjectsBtn.addEventListener("click", () => {
+            currentSubject = null;
+            document.querySelectorAll("#subject-list .folder-btn.selected").forEach(b => b.classList.remove("selected"));
+            showView("subjects");
+        });
+    }
+    if (backToChaptersBtn) {
+        backToChaptersBtn.addEventListener("click", () => {
+            currentChapter = null;
+             document.querySelectorAll("#chapter-list .folder-btn.selected").forEach(b => b.classList.remove("selected"));
+            showView("chapters");
+        });
+    }
+
+}); // End DOMContentLoaded
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
