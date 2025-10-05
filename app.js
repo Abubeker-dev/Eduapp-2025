@@ -130,17 +130,7 @@ const ADMIN = {
             }
        },
 
-      { "chapter-1": [  { title: "Amhara Grade 7 Maths unit 6 solid figure and congruency", url: "https://www.youtube.com/embed/UNXO2Q7bxG4?rel=0&modestbranding=1" },
-             ] },
-    
-{ "chapter-8": [ { title: "Amhara Grade 7 Maths unit 6 solid figure and congruency", url: "https://www.youtube.com/embed/UNXO2Q7bxG4?rel=0&modestbranding=1" },
-             ] },
-
-  { "chapter-9": [  { title: "Amhara Grade 7 Maths unit 6 solid figure and congruency", url: "https://www.youtube.com/embed/UNXO2Q7bxG4?rel=0&modestbranding=1" },
-             ] },
-  
-   { "chapter-10": [ { title: "Amhara Grade 7 Maths unit 6 solid figure and congruency", url: "https://www.youtube.com/embed/UNXO2Q7bxG4?rel=0&modestbranding=1" },
-              ] },
+      
   
        "grade-8": { // Fill with Amhara G8 data
             "maths": { "chapter-1": [] }, "english": { "chapter-1": [] }, "gs": { "chapter-1": [] }, "ict": { "chapter-1": [] }, "citizenship": { "chapter-1": [] }
@@ -925,6 +915,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 }); // End DOMContentLoaded
+
 
 
 
