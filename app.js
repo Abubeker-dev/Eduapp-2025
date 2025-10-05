@@ -103,8 +103,8 @@ const ADMIN = {
             },
          
          "citizenship": { 
-           "chapter-1":[ { title: "Amhara G5 Maths Ch1 Vid1", url: "https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0&modestbranding=1" },
-             { title: "Amhara G5 Maths Ch1 Vid2", url: "https://www.youtube.com/embed/3JZ_D3ELwOQ?rel=0&modestbranding=1" },  ],
+           "chapter-1":[ { title: " grade 7 pva unit 1 part 1", url: "https://www.youtube.com/embed/8034613J3KE?rel=0&modestbranding=1" },
+             { title: "grade 7 pva unit 1 part 2", url: "https://www.youtube.com/embed/yBeDqD92q7E?rel=0&modestbranding=1" },  ],
               
               "chapter-2":[{ title: "Amhara G5 Maths Ch1 Vid1", url: "https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0&modestbranding=1" },
              { title: "Amhara G5 Maths Ch1 Vid2", url: "https://www.youtube.com/embed/3JZ_D3ELwOQ?rel=0&modestbranding=1" },  ],
@@ -912,6 +912,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 }); // End DOMContentLoaded
+
 
 
 
