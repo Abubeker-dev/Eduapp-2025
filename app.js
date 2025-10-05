@@ -186,7 +186,7 @@ const ADMIN = {
               "english":
                 {
                "chapter-1":[ { title: "english grade 7 unit 1 part 1", url: "https://www.youtube.com/embed/I1p3GVWNJNY?rel=0&modestbranding=1" },
-             { title: "Amhara G5 Maths Ch1 Vid2", url: "https://www.youtube.com/embed/3JZ_D3ELwOQ?rel=0&modestbranding=1" },  ],
+             { title: "english grade 7 unit 1 part 2", url: "https://www.youtube.com/embed/XdHS64OkYhI?rel=0&modestbranding=1" },  ],
               
               "chapter-2":[{ title: "Amhara G5 Maths Ch1 Vid1", url: "https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0&modestbranding=1" },
              { title: "Amhara G5 Maths Ch1 Vid2", url: "https://www.youtube.com/embed/3JZ_D3ELwOQ?rel=0&modestbranding=1" },  ],
@@ -912,6 +912,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 }); // End DOMContentLoaded
+
 
 
 
