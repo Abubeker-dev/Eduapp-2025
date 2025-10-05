@@ -129,9 +129,6 @@ const ADMIN = {
            
             }
        },
-
-      
-  
        "grade-8": { // Fill with Amhara G8 data
             "maths": { "chapter-1": [] }, "english": { "chapter-1": [] }, "gs": { "chapter-1": [] }, "ict": { "chapter-1": [] }, "citizenship": { "chapter-1": [] }
        }
@@ -915,9 +912,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 }); // End DOMContentLoaded
-
-
-
 
 
 
