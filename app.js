@@ -264,7 +264,33 @@ const ADMIN = {
          "citizenship": { "chapter-1": [] }
        },
        "grade-8": { // Fill with Addis G8 data
-            "maths": { "chapter-1": [] }, "english": { "chapter-1": [] }, "gs": { "chapter-1": [] }, "ict": { "chapter-1": [] }, "citizenship": { "chapter-1": [] }
+            "maths": { "chapter-1": [] }, "english":
+              { "chapter-1": [] }, "gs": { "chapter-1": [] }, "ict": { "chapter-1": [] }, "citizenship":
+              { 
+                               "chapter-1":[ { title: "Amhara G5 Maths Ch1 Vid1", url: "https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0&modestbranding=1" },
+             { title: "Amhara G5 Maths Ch1 Vid2", url: "https://www.youtube.com/emrubed/3JZ_D3ELwOQ?rel=0&modestbranding=1" },  ],
+              
+              "chapter-2":[{ title: "Amhara G5 Maths Ch1 Vid1", url: "https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0&modestbranding=1" },
+             { title: "Amhara G5 Maths Ch1 Vid2", url: "https://www.youtube.com/embed/3JZ_D3ELwOQ?rel=0&modestbranding=1" },  ],
+              
+              
+              "chapter-3": [
+                     { title: "Grade 7 Maths Unit 3 Part 1", url: "PUT_YOUR_YOUTUBE_EMBED_URL_HERE" },
+                     { title: "Grade 7 Maths Unit 3 Part 2 (if available)", url: "PUT_ANOTHER_YOUTUBE_EMBED_URL_HERE" },
+                 ],
+                 "chapter-4": [  { title: "Amhara G5 Maths Ch1 Vid1", url: "https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0&modestbranding=1" },
+             { title: "Amhara G5 Maths Ch1 Vid2", url: "https://www.youtube.com/embed/3JZ_D3ELwOQ?rel=0&modestbranding=1" },  ],
+              "chapter-5": [ { title: "Amhara G5 Maths Ch1 Vid1", url: "https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0&modestbranding=1" },
+             { title: "Amhara G5 Maths Ch1 Vid2", url: "https://www.youtube.com/embed/3JZ_D3ELwOQ?rel=0&modestbranding=1" },  ],
+              
+              "chapter-6":[{ title: "Amhara Grade 7 Maths unit 6 solid figure and congruency", url: "https://www.youtube.com/embed/UNXO2Q7bxG4?rel=0&modestbranding=1" },
+          
+                           { title: "Amhara Grade 7 Maths Cunit 6  solid figure and congruency", url: "https://www.youtube.com/embed/UNXO2Q7bxG4?rel=0&modestbranding=1" }, ],
+              
+              "chapter-7":[{ title: "Amhara G5 Maths Ch1 Vid1", url: "https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0&modestbranding=1" },
+             { title: "Amhara G5 Maths Ch1 Vid2", url: "https://www.youtube.com/embed/3JZ_D3ELwOQ?rel=0&modestbranding=1" },  ] 
+                
+                 }
        }
     }
   }
@@ -811,6 +837,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 }); // End DOMContentLoaded
+
 
 
 
