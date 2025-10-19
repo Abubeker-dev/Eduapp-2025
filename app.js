@@ -145,7 +145,8 @@ const ADMIN = {
            ],
             "chapter-2": [], "chapter-3": [], "chapter-4": [], "chapter-5": [], "chapter-6": [], "chapter-7": [], "chapter-8": [], "chapter-9": [],
          },
-         "english": { "chapter-1": [] }, // Add Addis G5 English chapters/videos
+         "english": { "chapter-1": []   "chapter-2": [   { title: "English Grade 5 Unit 2 Part 1", url: "https://www.youtube.com/embed/Pi4edhKG5oc?rel=0&modestbranding=1" },
+             { title: "grade 5English Unit 2 Part 2", url: "https://www.youtube.com/embed/vgZPV75mYvQ?rel=0&modestbranding=1" },  ], "chapter-3": [], "chapter-4": [], "chapter-5": [], "chapter-6": [], "chapter-7": [], "chapter-8": [], "chapter-9": [],   }, // Add Addis G5 English chapters/videos
          "gs": { "chapter-1": [] },      // Add Addis G5 GS chapters/videos
          "ict": { "chapter-1": [] },     // Add Addis G5 ICT chapters/videos
          "citizenship": { "chapter-1": [] } // Add Addis G5 Citizenship chapters/videos
@@ -912,6 +913,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 }); // End DOMContentLoaded
+
 
 
 
